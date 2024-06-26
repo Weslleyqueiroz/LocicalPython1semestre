@@ -1,7 +1,10 @@
-#.Leia um número inteiro e escreva seu sucessor e antecessor.
+# Ler um valor e escrever a mensagem É MAIOR QUE 10! se o
+# valor lido for maior que 10, caso contrário escrever NÃO É
+# MAIOR QUE 10!
 
-numero_inteiro = int(input("Digite um número qualquer :"))
-sucessor = (numero_inteiro +1)
-antecessor = (numero_inteiro -1)
+valor1=int(input("Digite um valor :"))
 
-print("O sucessor do",numero_inteiro, "é",sucessor, "e o antecessor é", antecessor)
+if valor1>10:
+    print("É MAIOR QUE 10!")
+else:
+    print("Não é maior do que 10!")

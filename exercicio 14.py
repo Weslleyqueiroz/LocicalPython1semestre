@@ -1,24 +1,14 @@
-# -*- coding: utf-8 -*-
-
+# Desenvolva um sistema que receba 2 notas e
+#calcule a média final de cada aluno de uma sala
+#com 60 alunos. Calcule também a média da sala.
+nota1=float(input("Digite a primeira nota :"))
+nota2=float(input("Digite a segunda nota :"))
+media_aluno=(nota1+nota2)/2
 cont=0
-num = int(input("Entre com um numero :"))
-
-while num!=0:
-    print("numero positvo")
-    if num>0:
-        print("esse número é positivo",num)
-        num = int(input("digite outro número :"))
-    
-    elif num<0:
-        print("esse número é negativo", num)
-        num = int(input("digite outro número :"))
-        
-    else:
-        print("Digite um número. 0 para encerrar :",num)
-        num = int(input("digite outro número :"))
-        cont=cont + 1
-print("loop encerrado")
-
-    
-   
-
+media_total=0
+while cont<60:
+    print("A media individual é de :",media_aluno)
+    media_total=media_total+media_aluno
+    cont=cont+1
+media_sala=media_total/cont
+print("A media da sala é de :",media_sala)

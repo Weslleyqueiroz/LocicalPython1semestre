@@ -1,18 +1,30 @@
-#As maçãs custam R$ 1,30 cada se forem compradas menos de
-#uma dúzia, e R$ 1,00 se forem compradas pelo menos 12.
-#Escreva um programa que leia o número de maçãs
-#compradas, calcule e escreva o custo total da compra.
+# Leia a velocidade máxima permitida em uma avenida e a
+#velocidade com que o motorista estava dirigindo nela e
+#calcule a multa que uma pessoa vai receber, sabendo que
+#são pagos:
+    
+#50 reais se o motorista estiver ultrapassar em até 10km/h a
+#velocidade permitida (ex.: velocidade máxima: 50km/h;
+#motorista a 60km/h ou a 56km/h);
 
+vel_max=int(input("Digite a velocidade maxima permetida :"))
+vel_motorista=int(input("Digite a velocidade do motorista :"))
+diferenca=vel_motorista-vel_max
+multa=50
+multa2=100
+multa3=200
 
-valor_maca=float(input("Digite quantas maças foram compradas: "))
-
-
-
-if valor_maca<12:
-    resultado=valor_maca*1.30
-    print("O valor foi de :", resultado)
-elif valor_maca>=12:
-    resultado2=valor_maca*1
-    print("O valor da compra foi de:", resultado2)
+if diferenca<=0:
+    print("Sem multa")
+    
+elif(diferenca<=10):
+    print("Multa de :", multa)
+    
+elif(diferenca<=30):
+    print("Multa de :", multa2)
+    
+else:
+    
+    print("Multa de: ", multa3)
     
     

@@ -1,20 +1,23 @@
 # -*- coding: utf-8 -*-
-num1=(int(input("Digite um número para ser somado :")))
-num2=(int(input("Digite um número para ser somado :")))
-soma=num1+num2
-print("O resultado da soma é :",soma)
-##subtração
-num1=(int(input("Digite um número para ser subtraido :")))
-num2=(int(input("Digite um número para ser subtraido :")))
-subtracao=num1-num2
-print("O resultado da subtração é :",subtracao)
-#multiplicação
-num1=(int(input("Digite um número para ser multiplicado :")))
-num2=(int(input("Digite um número para ser multiplicado :")))
-multiplicacao=num1*num2
-print("O resultado da multiplicação é :",multiplicacao)
-#divisao
-num1=(int(input("Digite um número para ser dividido :")))
-num2=(int(input("Digite um número para ser dividido :")))
-divisao=num1/num2
-print("O resultado da divisão é :",divisao)
+def IMC (peso,altura):
+    calculo_imc= peso/altura**2
+    print("O calculo imc é :",calculo_imc)
+
+    if calculo_imc<=18.5:
+        print("Abaixo do normal")
+    elif calculo_imc<=25:
+        print("Normal")
+    elif calculo_imc<30:
+        print("Sobrepeso")
+    elif calculo_imc<35:
+        print("Obesidade grau I")
+    elif calculo_imc<40:
+        print("Obesidade grau II")
+    else:
+        print("Obesidade grau III")
+        
+peso=float(input("Digite o seu peso :"))
+altura=float(input("Digite a sua altura :"))
+
+IMC(peso, altura)
+

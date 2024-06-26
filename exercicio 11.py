@@ -1,15 +1,9 @@
-#Faça um Programa que verifique se uma letra digitada é "F" ou "M". 
-#Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
-sexo=str(input("Digite F para feminino ou M para masculino: "))
-f=str
-m=str
-
-#verificação
-if sexo=="f":
-    print("Feminino")
-elif sexo=="m":
-    print("Masculino")
+#Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+valor=int(input("Digite um valor: "))
+if valor>0:
+    print("Esse número é positivo!!!")
+elif valor==0:
+    print("Esse número é nulo!")
 else:
-    print("Sexo inválido")
-    
+    print("Esse número é negativo!!")
 

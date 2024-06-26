@@ -1,30 +1,26 @@
-# Leia a velocidade máxima permitida em uma avenida e a
-#velocidade com que o motorista estava dirigindo nela e
-#calcule a multa que uma pessoa vai receber, sabendo que
-#são pagos:
-    
-#50 reais se o motorista estiver ultrapassar em até 10km/h a
-#velocidade permitida (ex.: velocidade máxima: 50km/h;
-#motorista a 60km/h ou a 56km/h);
+# -*- coding: utf-8 -*-
+cont=0
+media_total=0
+maior_nota=0
+menor_nota=0
 
-vel_max=int(input("Digite a velocidade maxima permetida :"))
-vel_motorista=int(input("Digite a velocidade do motorista :"))
-diferenca=vel_motorista-vel_max
-multa=50
-multa2=100
-multa3=200
+while(cont<5):
+    nota1=float(input("Digite a primeira nota: "))
+    nota2=float(input("Digite a segunda nota: "))
+    media=(nota1+nota2)/2
+    total=media_total+media
+    print("A média do aluno foi: ", media)
+    if(cont ==0):
+        menor_nota=media
+        maior_nota=media
+    if(media<menor_nota):
+        menor_nota=media
+    if(media>maior_nota):
+        maior_nota=media
+    cont=cont+1
+mediageral=total/cont
+print("A média da sala é de :",mediageral)
+print("A menor nota da sala é de :",menor_nota)
+print("A maior nota da sala é de :",maior_nota)
 
-if diferenca<=0:
-    print("Sem multa")
-    
-elif(diferenca<=10):
-    print("Multa de :", multa)
-    
-elif(diferenca<=30):
-    print("Multa de :", multa2)
-    
-else:
-    
-    print("Multa de: ", multa3)
-    
-    
+

@@ -1,11 +1,15 @@
-#Crie uma função que receba dois números como parâmetros e retorne a soma
-#deles. Em seguida, solicite ao usuário que entre com os 2 números, chame a
-#função e imprima o resultado na tela.
+cont=0
+num=float(input("Digite um número para a validação :"))
 
-def somas (n1,n2):
-    soma=n1+n2
-    print("O resultado da soma dos números é :",soma)
-n1=int(input("Digite um número :"))
-n2=int(input("Digite um número :"))
-somas(n1, n2)
-    
+while num!=0:
+    if num>0:
+        print("Esse número é positivo!")
+    elif num<0:
+        print("Negativo!!")
+       
+    else:
+        print("Esse número é ZERO! Digite 0 para encerrar :")
+    num=float(input("Digite um número para a validação :"))
+    cont= cont + 1
+print("Programa encerrado!")
+        
